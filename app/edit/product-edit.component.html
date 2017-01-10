@@ -1,0 +1,9 @@
+<form class="form" #f="ngForm" (ngSubmit)="SaveForm()" *ngIf="product">
+    <div class="form-group">
+        <label class="col-md-2">Number of phone </label>
+        <div class="col-md-10"><input type="number" name="Number of phone" [(ngModel)]="product.numberofphone" /></div>
+    </div>
+    <div class="form-group">
+        <button type="submit">Save</button>
+    </div>
+</form>

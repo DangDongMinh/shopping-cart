@@ -1,0 +1,10 @@
+<div class="table" *ngIf="product">
+    <div class="row"><img src="{{product.picture}}" width="50" height="50"></div>
+    <div class="row">{{product.name}}</div>
+    <div class="row">{{product.price}}</div>
+    <div class="row">{{product.numberofphone}}</div>
+    <div class="row">{{product.status}}</div>
+</div>
+<a class="btn btn-default" [routerLink]="['/products']">Go back</a>
+
+<router-outlet></router-outlet>
